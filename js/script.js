@@ -86,6 +86,7 @@ $ajaxUtils.sendGetRequest(
 
 // Load the menu categories view
 dc.loadMenuCategories = function () {
+  switchMenuToActive();
   showLoading("#main-content");
   $ajaxUtils.sendGetRequest(
     allCategoriesUrl,
